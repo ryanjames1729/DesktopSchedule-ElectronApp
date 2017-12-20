@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="settings.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+    <meta charset="utf-8">
+    <title>Mr. James Computer Science Schedule</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 style="color:gold">Schedule Settings</h1>
+            </div>
+    </div>
+    <div class="container">
+      <form name="myform" method="GET">
+         <br>
+        1st Period
+        <input type="text" name="oneA" value="">
+        <input type="checkbox" name="MS1A"> MS <input type="checkbox" name="HS1A"> HS
+        <input type="text" name="oneB" value="">
+        <input type="checkbox" name="MS1B"> MS <input type="checkbox" name="HS1B"> HS
+        <br><br>
+        2nd Period
+        <input type="text" name="twoA" value="">
+        <input type="checkbox" name="MS2A"> MS <input type="checkbox" name="HS2A"> HS
+        <input type="text" name="twoB" value="">
+        <input type="checkbox" name="MS2B"> MS <input type="checkbox" name="HS2B"> HS
+        <br><br>
+        3rd Period
+        <input type="text" name="threeA" value="">
+        <input type="checkbox" name="MS3A"> MS <input type="checkbox" name="HS3A"> HS
+        <input type="text" name="threeB" value="">
+        <input type="checkbox" name="MS3B"> MS <input type="checkbox" name="HS3B"> HS
+        <br><br>
+        4th Period
+        <input type="text" name="fourA" value="">
+        <input type="checkbox" name="MS4A"> MS <input type="checkbox" name="HS4A"> HS
+        <input type="text" name="fourB" value="">
+        <input type="checkbox" name="MS4B"> MS <input type="checkbox" name="HS4B"> HS
+        <br><br>
+        5th Period
+        <input type="text" name="fiveA" value="">
+        <input type="checkbox" name="MS5A"> MS <input type="checkbox" name="HS5A"> HS
+        <input type="text" name="fiveB" value="">
+        <input type="checkbox" name="MS5B"> MS <input type="checkbox" name="HS5B"> HS
+        <br><br>
+        6th Period
+        <input type="text" name="sixA" value="">
+        <input type="checkbox" name="MS6A"> MS <input type="checkbox" name="HS6A"> HS
+        <input type="text" name="sixB" value="">
+        <input type="checkbox" name="MS6B"> MS <input type="checkbox" name="HS6B"> HS
+        <br><br>
+        7th Period
+        <input type="text" name="sevenA" value="">
+        <input type="checkbox" name="MS7A"> MS <input type="checkbox" name="HS7A"> HS
+        <input type="text" name="sevenB" value="">
+        <input type="checkbox" name="MS7B"> MS <input type="checkbox" name="HS7B"> HS
+        <br><br>
+          <input type="button" name="copy" value="Copy (no semester classes)" onClick="copyColumn(this.form)">
+          <input type="button" name="submit" value="Submit" onClick="finished(this.form)">
+          <script>fill(myform)</script>
+      </form>
+    </div>
+    <a href="index.html">BACK</a>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="index.js"></script>
+    <script src="settings.js"></script>
+    <meta charset="utf-8">
+    <title>Mr. James Computer Science Schedule</title>
+  </head>
+  <body>
+    <div class="jumbotron" style="background-color:Silver">
+      <div class="container">
+        <h1 id="title">Altamont Computer Science</h1>
+        <h3 id="date" style="color:gold; text-align:right"></h3>
+      </div>
+    </div>
+    <h3 id="date"></h3>
+    <h1 id="clock" style="text-align:center; font-size:70px">00:00</h1>
+    <h6 id="current"></h6>
+    <h6 id="future"></h6>
+    <p style="text-align: center">
+      <button type="button" class="btn btn-primary" onclick = "backpack()">My BackPack</button>
+      <button type="button" class="btn btn-primary" onclick = "haiku()">Haiku</button>
+      <br><br><br><br><br>
+    </p>
+    <script>
+    const {shell} = require('electron')
+    function backpack(){
+      shell.openExternal("https://altamont.seniormbp.com/SeniorApps");
+    }
+    function haiku(){
+      shell.openExternal("https://altamontschool.haikulearning.com/do/account/login");
+    }
+    </script>
+  </body>
+  <footer>
+    <a href="settings.html">Go to Settings</a><br><br>
+    Made by Ryan James
+  </footer>
+</html>
